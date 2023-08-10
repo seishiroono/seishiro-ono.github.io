@@ -1,1 +1,0 @@
-# seishiro-ono.github.io
