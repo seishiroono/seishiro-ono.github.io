@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+  <style>
+  .container {
+            display: flex; /* flexboxを使用してコンテンツを横に配置 */
+        }
+  .pdf-container {
+            flex: 1; /* 1つの要素が伸縮してコンテンツを横に並べる */
+            margin-right: 10px; /* 図とテーブルの間隔を10pxに設定 */
+        }
+  .table-container {
+            flex: 1; /* 1つの要素が伸縮してコンテンツを横に並べる */
+            padding-left: 10px; /* 図とテーブルの間隔を10pxに設定 */
+        }
+  table {
+      border-collapse:collapse;
+      width:100%;
+      margin-bottom: 20px; /* テーブル間に20pxの余白を設定 */
+    }
+  th, td {
+            border: 1px solid black; /* セルの境界線を黒で表示 */
+            padding: 8px; /* セルの内側の余白を8pxに設定 */
+            text-align: left; /* テキストを左寄せに設定 */
+        }
+</style>
+</head>
+<body>
+
+<h1>MSG 37.186</h1>
+<div class="container">
+    <!--PDFを表示するコンテナ-->
+    <div class="pdf-container">
+        <embed src="./cell_fig/FD_284_sc.pdf" width="500" height="700" type="application/pdf">
+</div>
+<!-- テーブルを表示するコンテナ -->
+<div class="table-container">
+<table>
+<tr><td> Symbol </td><td> Coordinates </td></tr>
+<tr><td>A</td><td> \(\left(0,0,0\right)\) </td></tr>
+<tr><td>B</td><td> \(\left(1,0,0\right)\) </td></tr>
+<tr><td>C</td><td> \(\left(\frac{1}{2},\frac{1}{2},0\right)\) </td></tr>
+<tr><td>D</td><td> \(\left(0,0,\frac{1}{2}\right)\) </td></tr>
+<tr><td>E</td><td> \(\left(1,0,\frac{1}{2}\right)\) </td></tr>
+<tr><td>F</td><td> \(\left(\frac{1}{2},\frac{1}{2},\frac{1}{2}\right)\) </td></tr>
+<table>
+<table>
+<tr><td> Symbol </td><td> First boundary 0-cell </td><td> Second boundary 0-cell </td></tr>
+<tr><td> \(a\) </td><td> \(\left(0,0,0\right)\) </td><td> \(\left(1,0,0\right)\) </td></tr>
+<tr><td> \(b\) </td><td> \(\left(0,0,0\right)\) </td><td> \(\left(0,1,0\right)\) </td></tr>
+<tr><td> \(c\) </td><td> \(\left(0,1,0\right)\) </td><td> \(\left(\frac{1}{2},\frac{1}{2},0\right)\) </td></tr>
+<tr><td> \(d\) </td><td> \(\left(0,0,\frac{1}{2}\right)\) </td><td> \(\left(1,0,\frac{1}{2}\right)\) </td></tr>
+<tr><td> \(e\) </td><td> \(\left(0,0,\frac{1}{2}\right)\) </td><td> \(\left(0,1,\frac{1}{2}\right)\) </td></tr>
+<tr><td> \(f\) </td><td> \(\left(0,1,\frac{1}{2}\right)\) </td><td> \(\left(\frac{1}{2},\frac{1}{2},\frac{1}{2}\right)\) </td></tr>
+<tr><td> \(g\) </td><td> \(\left(0,0,0\right)\) </td><td> \(\left(0,0,\frac{1}{2}\right)\) </td></tr>
+<tr><td> \(h\) </td><td> \(\left(1,0,0\right)\) </td><td> \(\left(1,0,\frac{1}{2}\right)\) </td></tr>
+<tr><td> \(i\) </td><td> \(\left(\frac{1}{2},\frac{1}{2},0\right)\) </td><td> \(\left(\frac{1}{2},\frac{1}{2},\frac{1}{2}\right)\) </td></tr>
+</table>
+<table>
+<tr><td> Symbol </td><td> Boundary 0-cells </td></tr>
+<tr><td> \(\alpha\) </td><td> \(\left(0,0,0\right)\left(1,0,0\right)\left(0,1,0\right)\) </td></tr>
+<tr><td> \(\beta\) </td><td> \(\left(0,0,\frac{1}{2}\right)\left(1,0,\frac{1}{2}\right)\left(0,1,\frac{1}{2}\right)\) </td></tr>
+<tr><td> \(\gamma\) </td><td> \(\left(0,0,0\right)\left(1,0,0\right)\left(1,0,\frac{1}{2}\right)\left(0,0,\frac{1}{2}\right)\) </td></tr>
+<tr><td> \(\delta\) </td><td> \(\left(0,0,0\right)\left(0,1,0\right)\left(0,1,\frac{1}{2}\right)\left(0,0,\frac{1}{2}\right)\) </td></tr>
+<tr><td> \(\varepsilon\) </td><td> \(\left(1,0,0\right)\left(\frac{1}{2},\frac{1}{2},0\right)\left(\frac{1}{2},\frac{1}{2},\frac{1}{2}\right)\left(1,0,\frac{1}{2}\right)\) </td></tr>
+</table>
+
+</div>
+</div>
+</body>
+</html>
